@@ -1,0 +1,101 @@
+<!-- 
+<div class="container">
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="center-container">
+          <fieldset>
+            <legend>Login</legend>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" formControlName="username" required>
+              <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.dirty || loginForm.get('username')?.touched)">
+                <div *ngIf="loginForm.get('username')?.errors?.['required']" class="error-message">Username is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" formControlName="password" required>
+              <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+                <div *ngIf="loginForm.get('password')?.errors?.['required']" class="error-message">password is required</div>
+              </div>
+            </div>
+            <button type="submit" [disabled]="!loginForm.valid">Sign In</button>
+          </fieldset>
+        </div>
+      </form>
+</div> -->
+
+<!-- <div class="container">
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="center-container">
+          <fieldset>
+              <legend>Login</legend>
+
+              
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" formControlName="username" required aria-required="true" autocomplete="username">
+                  <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.dirty || loginForm.get('username')?.touched)">
+                      <div *ngIf="loginForm.get('username')?.errors?.['required']" class="error-message">Username is required</div>
+                  </div>
+              </div>
+
+              
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" formControlName="password" required aria-required="true" autocomplete="current-password">
+                  <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+                      <div *ngIf="loginForm.get('password')?.errors?.['required']" class="error-message">Password is required</div>
+                  </div>
+              </div>
+
+              
+              <button type="submit" [disabled]="!loginForm.valid">Sign In</button>
+          </fieldset>
+
+         
+          <p class="signup-link">Don't have an account? <a routerLink="/signup">Sign up here</a></p>
+      </div>
+  </form>
+</div> -->
+
+<div class="login-container">
+  <div class="login-card">
+
+    <!-- Form Section -->
+    <div class="form-container">
+      <h2 class="login-title">Sign in</h2>
+      
+      <p class="quote">"Celebrating life’s milestones with you—where every event is a memory in the making.</p>
+
+      <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <!-- Username Field -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" formControlName="username" required aria-required="true" autocomplete="username">
+          <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.dirty || loginForm.get('username')?.touched)">
+            <div *ngIf="loginForm.get('username')?.errors?.['required']" class="error-message">Username is required</div>
+          </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" formControlName="password" required aria-required="true" autocomplete="current-password">
+          <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+            <div *ngIf="loginForm.get('password')?.errors?.['required']" class="error-message">Password is required</div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" [disabled]="!loginForm.valid" class="login-button">Sign In</button>
+
+        <div class="signup-link">
+          <button (click)="navigateToSignUp()">Go to Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
