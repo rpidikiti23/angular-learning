@@ -1,0 +1,152 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e2e2e2, #ffffff); 
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .signup-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    flex-direction: column;
+  }
+  
+  .tab-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px; 
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .tab-header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff; 
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 2px solid #ddd; 
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #ffffff; 
+    border-bottom: 2px solid #007bff; 
+    color: #0056b3; 
+  }
+  
+  .tab-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+  
+  .form-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; 
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; 
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff; 
+  }
+  
+  .error-message {
+    color: #dc3545; 
+    font-size: 14px; 
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; 
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 20px; /* Optional: Add spacing above the buttons */
+}
+
+button {
+  padding: 12px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #6c757d; /* Different color for cancel button */
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268; /* Darker color on hover for cancel button */
+}
+
+  
+  
+  
+  
