@@ -33,7 +33,7 @@ export class SignUpComponent implements OnInit{
   onSubmit(): void {
     if (this.signupForm.valid) {
       console.log('SignUp form', this.signupForm.value);
-      
+     this.router.navigate(['/home']); 
     }
   }
 
@@ -58,10 +58,6 @@ export class SignUpComponent implements OnInit{
         return null; 
       }
     };
-  }
-
-  setActiveTab(tabName: string): void {
-    this.activeTab = tabName;
   }
   
   onClick(){
