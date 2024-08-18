@@ -19,13 +19,11 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    console.log("TEST");
-    // Handle form submission logic here
     console.log(this.loginForm.value);
+    this.router.navigate(['/home']);
   }
 
   navigateToSignUp(){
-    console.log('TESTSETSDFSD');
     this.router.navigate(['/signup']);
   }
 
