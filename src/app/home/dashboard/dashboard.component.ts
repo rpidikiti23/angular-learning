@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
   selectedTab = 'event-listing';
+  selectedEventId: number | null = null;
 
   onEvent1Click(){
+    this.selectedEventId = 1
     console.log("TEST Event 1 Clicked");
   }
 

@@ -16,13 +16,13 @@
         <div class="tab-content">
             <div *ngIf="selectedTab === 'event-listing'">
                 <!-- Content for Event Listing tab -->
-                <!-- <app-event-listing></app-event-listing> -->
-                 Event Listing Card Layout based on the category
+                <app-event-listing [eventId]="selectedEventId" ></app-event-listing>
+                 <!-- Event Listing Card Layout based on the category -->
             </div>
             <div *ngIf="selectedTab === 'user-event'">
                 <!-- Content for User Event tab -->
-                <!-- <app-user-event></app-user-event> -->
-                User Events card Layout 
+                <app-user-events></app-user-events>
+                <!-- User Events card Layout  -->
             </div>
         </div>
     </div>

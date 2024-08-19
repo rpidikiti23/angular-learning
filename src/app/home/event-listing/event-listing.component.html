@@ -1,0 +1,17 @@
+<div class="card-grid">
+    <div *ngFor="let card of cards" class="card-container">
+      <p-card [header]="card.header" [subheader]="card.subheader">
+        <ng-template pTemplate="header">
+          <img class="card-image" [alt]="card.header" [src]="card.imageUrl" />
+        </ng-template>
+        <div class="card-content">
+          <p>{{ card.content }}</p>
+        </div>
+        <ng-template pTemplate="footer">
+          <div class="card-footer">
+            <p-button label="Book Now" class="w-full" (click)="onClick()"></p-button>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
